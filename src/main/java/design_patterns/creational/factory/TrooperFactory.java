@@ -4,7 +4,6 @@ import design_patterns.creational.factory.troopers.DeathTrooper;
 import design_patterns.creational.factory.troopers.SnowTrooper;
 import design_patterns.creational.factory.troopers.StormTrooper;
 import design_patterns.creational.factory.troopers.Trooper;
-import design_patterns.creational.factory.troopers.TrooperType;
 
 public class TrooperFactory {
 	public Trooper createTrooper(TrooperType type) {
