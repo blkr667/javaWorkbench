@@ -25,7 +25,7 @@ public class Stronghold implements Observable{
 
 	@Override
 	public void notifyObservers() {
-		if(state == StrongholdState.ENEMIES || state == StrongholdState.SUSPECTED_VISITORS) {
+		if(state == StrongholdState.ENEMIES) {
 			guards.forEach(guard -> guard.answerToNotification());
 		}
 	}

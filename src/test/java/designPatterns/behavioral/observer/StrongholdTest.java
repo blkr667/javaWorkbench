@@ -38,7 +38,7 @@ public class StrongholdTest {
 		stronghold.register(secondGuard);
 		
 		// when
-		stronghold.setStrongholdState(StrongholdState.ENEMIES);
+		stronghold.setStrongholdState(StrongholdState.TRADERS);
 		
 		// then
 		assertEquals(GuardLocation.CANTEEN, firstGuard.getGuardLocation());
