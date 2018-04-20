@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="designPatterns.creational.builder.RangerBuilderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-20T18:50:08" hostname="CNU35191GK" time="0.004">
-  <properties/>
-  <testcase name="shouldCreateDefaultRanger_withBuilder" classname="designPatterns.creational.builder.RangerBuilderTest" time="0.004"/>
-  <testcase name="shouldCreateSpecialRanger_withBuilder" classname="designPatterns.creational.builder.RangerBuilderTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

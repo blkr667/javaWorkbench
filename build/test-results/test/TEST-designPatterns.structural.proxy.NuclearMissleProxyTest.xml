@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="designPatterns.structural.proxy.NuclearMissleProxyTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-20T18:50:08" hostname="CNU35191GK" time="0.004">
-  <properties/>
-  <testcase name="shouldRenderConvoyMembersWithOptimization_whenDuplicatedTypes" classname="designPatterns.structural.proxy.NuclearMissleProxyTest" time="0.003"/>
-  <testcase name="shouldSuspendLaunchingMissle_whenAdministratorWithDefaultAccessRights" classname="designPatterns.structural.proxy.NuclearMissleProxyTest" time="0.001"/>
-  <system-out><![CDATA[5 km zone destroyed by John
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
