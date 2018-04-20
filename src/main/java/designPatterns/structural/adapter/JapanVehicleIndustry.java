@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 /*
  * Adapter class
+ * 
+ *  * Adapt incompatible interfaces into common interface
  */
 public class JapanVehicleIndustry implements VehicleIndustry{
 	private final JapanCarIndustry japanCarIndustry;
