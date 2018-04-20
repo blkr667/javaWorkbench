@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="designPatterns.behavioral.observer.StrongholdTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-04-20T18:50:07" hostname="CNU35191GK" time="0.003">
+  <properties/>
+  <testcase name="shoulNotifyGuards_whenEnemiesAtStronghold" classname="designPatterns.behavioral.observer.StrongholdTest" time="0.003"/>
+  <testcase name="shoulNotNotifyGuards_whenNoDanger" classname="designPatterns.behavioral.observer.StrongholdTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

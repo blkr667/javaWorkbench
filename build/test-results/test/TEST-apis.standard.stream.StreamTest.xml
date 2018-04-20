@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apis.standard.stream.StreamTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-04-20T18:50:07" hostname="CNU35191GK" time="0.017">
+  <properties/>
+  <testcase name="shouldMap" classname="apis.standard.stream.StreamTest" time="0.007"/>
+  <testcase name="shouldFilter" classname="apis.standard.stream.StreamTest" time="0.003"/>
+  <testcase name="shouldReduce_withAccumulator_identity_combiner" classname="apis.standard.stream.StreamTest" time="0.005"/>
+  <testcase name="shouldReduce_withAccumulator" classname="apis.standard.stream.StreamTest" time="0.001"/>
+  <testcase name="shouldReduce_withAccumulator_identity" classname="apis.standard.stream.StreamTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

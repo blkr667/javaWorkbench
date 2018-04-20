@@ -17,7 +17,6 @@ public class ConvoyFlyweightRendererTest {
 		convoyFlyweightRenderer = new ConvoyFlyweightRenderer();
 	}
 	
-	
 	@Test 
 	public void shouldRenderSingleConvoyMember() {
 		//when

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="designPatterns.creational.abstractFactory.MilitaryBuildingFactoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-04-20T18:50:08" hostname="CNU35191GK" time="0.014">
+  <properties/>
+  <testcase name="shouldcreateStandardSoldier_whenCreatedStandardMilitaryBuilding_byAbstractFactory" classname="designPatterns.creational.abstractFactory.MilitaryBuildingFactoryTest" time="0.01"/>
+  <testcase name="shouldcreateEliteVehicle_whenCreatedEliteMilitaryBuilding_byAbstractFactory" classname="designPatterns.creational.abstractFactory.MilitaryBuildingFactoryTest" time="0.002"/>
+  <testcase name="shouldcreateEliteSoldier_whenCreatedEliteMilitaryBuilding_byAbstractFactory" classname="designPatterns.creational.abstractFactory.MilitaryBuildingFactoryTest" time="0.001"/>
+  <testcase name="shouldcreateStandardVehicle_whenCreatedStandardMilitaryBuilding_byAbstractFactory" classname="designPatterns.creational.abstractFactory.MilitaryBuildingFactoryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

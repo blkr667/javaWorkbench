@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="designPatterns.behavioral.visitor.CleaningJanitorVisitorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-04-20T18:50:07" hostname="CNU35191GK" time="0.005">
+  <properties/>
+  <testcase name="shouldNotCleanShopBuilding_whenCustomersInside" classname="designPatterns.behavioral.visitor.CleaningJanitorVisitorTest" time="0.003"/>
+  <testcase name="shouldCleanResearchBuilding" classname="designPatterns.behavioral.visitor.CleaningJanitorVisitorTest" time="0.001"/>
+  <testcase name="shouldNotCleanResearchBuilding_whenTopSecretResearch" classname="designPatterns.behavioral.visitor.CleaningJanitorVisitorTest" time="0.0"/>
+  <testcase name="shouldCleanShopBuilding" classname="designPatterns.behavioral.visitor.CleaningJanitorVisitorTest" time="0.0"/>
+  <testcase name="shouldCleanProductionBuilding" classname="designPatterns.behavioral.visitor.CleaningJanitorVisitorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

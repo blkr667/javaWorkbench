@@ -10,7 +10,7 @@ import designPatterns.structural.composite.Warrior;
 
 public class OrcUnitTest {
 	@Test 
-	public void shoultGetGroupAttackPower_forCleanLeader() {
+	public void shouldGetGroupAttackPower_forCleanLeader() {
 		// given
 		ClanLeader clanLeader = prepareClanLeaderWithSubordinateUnits("Thrall", 10, 2);
 		
@@ -22,7 +22,7 @@ public class OrcUnitTest {
 	}
 	
 	@Test 
-	public void shoultGetGroupAttackPower_forWarchief() {
+	public void shouldGetGroupAttackPower_forWarchief() {
 		// given
 		Warchief warchief = new Warchief("Guldan", 20);
 		warchief.addSubordinateUnit(prepareClanLeaderWithSubordinateUnits("Thrall", 10, 2));
