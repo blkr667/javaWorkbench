@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import org.junit.Test;
 
@@ -77,4 +79,32 @@ public class StreamTest {
 
 		assertEquals(6, reductionResult);
 	}
+	
+	
+	@Test 
+	public void shouldToggleCase() {
+		String str = "abc 123 ABC";
+		IntStream letterStream = str.chars();
+		String result = letterStream
+			.mapToObj(integer -> (char) integer)
+			.map(character -> Character.isUpperCase(character) ? Character.toLowerCase(character) : Character.toUpperCase(character))
+			.map(character -> String.valueOf(character))
+			.collect(Collectors.joining());
+
+		  assertEquals("ABC 123 abc", result);
+	}
+	
+	@Test 
+	public void shouldCreateArray_withSize() {
+		int size = 5; 
+		String result = IntStream.rangeClosed(1, size)
+        .mapToObj(String::valueOf)
+        .collect(Collectors.joining(""));
+
+		  assertEquals("12345", result);
+	}
+	
+	
+	
+	
 }
