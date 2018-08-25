@@ -3,6 +3,7 @@ package apis.standard.news1_8;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.StringJoiner;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -10,7 +11,11 @@ import java.util.stream.Stream;
 import org.junit.Test;
 
 
-public class StringJoinerTest {
+public class StringJoinTest {
+	
+	/*
+	 * StringJoiner
+	 */
 	
 	@Test 
 	public void shouduseStringJoiner_withSeparator() {
@@ -32,6 +37,10 @@ public class StringJoinerTest {
 		assertEquals("[George:Sally:Fred]", resultString);
 	}
 	
+	/*
+	 * Collectors.joining
+	 */
+	
 	@Test 
 	public void  shouduseStringJoiner_viaCollector_withSeparator() {
 		String[] names = {"George", "Sally", "Fred"};
@@ -50,6 +59,24 @@ public class StringJoinerTest {
 		String resultString = stream.collect(Collectors.joining(":", "[", "]"));
 		
 		assertEquals("[George:Sally:Fred]", resultString);
+	}
+	
+	/*
+	 * String.join
+	 */
+	
+	@Test 
+	public void shouldJoinStrings() {
+		String result = String.join("-delimiter-", "A", "B", "C");
+		
+		assertEquals("A-delimiter-B-delimiter-C", result);
+	}
+	
+	@Test 
+	public void shouldJoinStrings_withRepeatString() {
+		String result = String.join("", Collections.nCopies(5, "AB"));
+		
+		assertEquals("ABABABABAB", result);
 	}
 
 }

@@ -1,8 +1,9 @@
-package apis.standard.stream;
+package apis.standard.news1_8.streams;
 
 import static org.junit.Assert.*;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -80,7 +81,6 @@ public class StreamTest {
 		assertEquals(6, reductionResult);
 	}
 	
-	
 	@Test 
 	public void shouldToggleCase() {
 		String str = "abc 123 ABC";
@@ -93,18 +93,24 @@ public class StreamTest {
 
 		  assertEquals("ABC 123 abc", result);
 	}
-	
-	@Test 
-	public void shouldCreateArray_withSize() {
-		int size = 5; 
-		String result = IntStream.rangeClosed(1, size)
-        .mapToObj(String::valueOf)
-        .collect(Collectors.joining(""));
 
-		  assertEquals("12345", result);
+	@Test
+	public void shouldChangeArray_viaStream() {
+		List<String> names = Arrays.asList("Tom", "John", "Glenn", "Gilbert");
+		
+		List<String> result = names.stream().map(name -> name.toUpperCase()).collect(Collectors.toList());
+		
+		assertEquals("TOM", result.get(0));
+		assertEquals("GILBERT", result.get(3));
 	}
 	
-	
-	
-	
+	@Test 
+	public void shouldChangeArray_viaStream_wothDoubleColonOperator() {
+		List<String> names = Arrays.asList("Tom", "John", "Glenn", "Gilbert");
+		
+		List<String> result = names.stream().map(String::toUpperCase).collect(Collectors.toList());
+		
+		assertEquals("TOM", result.get(0));
+		assertEquals("GILBERT", result.get(3));
+	}
 }
